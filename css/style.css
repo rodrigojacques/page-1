@@ -1,0 +1,118 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+a:visited{
+  color: #fff;
+}
+
+body{
+  color: #fff;
+  background-color: #121212;
+}
+
+.delay{
+  display: none;
+}
+.container{
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 65px 25px 60px 25px;
+}
+
+.div-video{
+  width: 100%;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.div-video iframe{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+}
+
+.title{
+  font-size: 32px;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+
+.title span{
+  color: #E39C20;
+}
+
+.sub{
+  color: #D4D4D6;
+  font-size: 18px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.cta{
+  padding: 20px;
+  width: 100%;
+  border: none;
+  background-color: #049009;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.cta:hover{
+  background-color: #09D310;
+}
+
+.depoimentos{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.div-depoimento img{
+  width: 100%;
+}
+
+footer{
+  text-align: center;
+  padding: 20px;
+}
+
+footer span{
+  color: #D4D4D6;
+  font-size: 14px;
+
+}
+
+@media (max-width: 1024px){
+  .title {
+    font-size: 28px;
+}
+}
+
+@media (max-width: 767px){
+  .title {
+    font-size: 24px;
+}
+  .sub{
+    font-size: 16px
+  }
+}
+
+@media (max-width: 540px){
+  .depoimentos{
+    grid-template-columns: 1fr;
+  }
+}
